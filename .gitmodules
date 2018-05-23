@@ -1,0 +1,49 @@
+[submodule "vf-event"]
+  path = processing/vein-event
+  url = https://github.com/ZeraGmbH/vf-event.git
+[submodule "vf-component"]
+  path = processing/vein-component
+  url = https://github.com/ZeraGmbH/vf-component.git
+[submodule "vf-logger"]
+  path = processing/vein-logger
+  url = https://github.com/ZeraGmbH/vf-logger.git
+[submodule "vf-script"]
+  path = processing/vein-script
+  url = https://github.com/ZeraGmbH/vf-script.git
+[submodule "vf-protobuf"]
+  path = transport/libvein-protobuf
+  url = https://github.com/ZeraGmbH/vf-protobuf.git
+  branch = design2
+[submodule "xiqnet"]
+  path = transport/xiqnet
+  url = https://github.com/ZeraGmbH/vf-tcp.git
+[submodule "vf-net2"]
+  path = transport/vein-net2
+  url = https://github.com/ZeraGmbH/vf-net2.git
+  branch = flatbuffers
+[submodule "vf-tcp"]
+  path = transport/vein-tcp
+  url = https://github.com/ZeraGmbH/vf-tcp.git
+  branch = vein-tcp
+[submodule "vf-hash"]
+  path = storage/vein-hash
+  url = https://github.com/ZeraGmbH/vf-storage-hash.git
+[submodule "vf-qml"]
+  path = api/qml-veinentity
+  url = https://github.com/ZeraGmbH/vf-qml.git
+[submodule "vf-helpers"]
+  path = utils/helpers
+  url = https://github.com/ZeraGmbH/vf-helpers.git
+[submodule "vf-debugger"]
+  path = utils/debugger
+  url = https://github.com/ZeraGmbH/vf-debugger.git
+[submodule "vf-unittest2"]
+  path = utils/vf-unittest2
+  url = https://github.com/ZeraGmbH/vf-unittest2.git
+  branch = Testv2
+[submodule "vf-database-recorder"]
+  path = utils/vf-database-recorder
+  url = https://github.com/ZeraGmbH/vf-database-recorder.git
+[submodule "vf-database-replay"]
+  path = utils/vf-database-replay
+  url = https://github.com/ZeraGmbH/vf-database-replay.git
