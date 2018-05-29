@@ -46,5 +46,5 @@ scripts/
 *.user.pri
 
 # ignore build output
-bin/*
-libs/*
+bin*
+libs*
