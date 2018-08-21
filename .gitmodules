@@ -47,3 +47,6 @@
 [submodule "vf-database-replay"]
   path = utils/vf-database-replay
   url = https://github.com/ZeraGmbH/vf-database-replay.git
+[submodule "transport/vf-protobuf"]
+  path = transport/vf-protobuf
+  url = https://github.com/ZeraGmbH/vf-protobuf.git
