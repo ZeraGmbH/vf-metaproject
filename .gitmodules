@@ -61,7 +61,7 @@
 [submodule "transport/vf-protobuf"]
   path = transport/vf-protobuf
   url = https://github.com/ZeraGmbH/vf-protobuf.git
-  branch = master
+  branch = design2
 [submodule "utils/vf-crypto-bridge"]
   path = utils/vf-crypto-bridge
   url = git@github.com:ZeraGmbH/vf-crypto-bridge.git
