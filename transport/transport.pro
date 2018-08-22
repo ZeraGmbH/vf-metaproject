@@ -5,4 +5,5 @@ CONFIG += ordered
 SUBDIRS += \
            vein-tcp/vf-tcp.pro \
            vein-net2/vf-net2.pro \
-           xiqnet
+           xiqnet \
+           vf-protobuf
