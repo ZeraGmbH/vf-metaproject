@@ -25,7 +25,7 @@
 [submodule "vf-net2"]
   path = transport/vein-net2
   url = https://github.com/ZeraGmbH/vf-net2.git
-  branch = flatbuffers
+  branch = master
 [submodule "vf-tcp"]
   path = transport/vein-tcp
   url = https://github.com/ZeraGmbH/vf-tcp.git
