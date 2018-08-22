@@ -1,15 +1,19 @@
 [submodule "vf-event"]
   path = processing/vein-event
   url = https://github.com/ZeraGmbH/vf-event.git
+  branch = master
 [submodule "vf-component"]
   path = processing/vein-component
   url = https://github.com/ZeraGmbH/vf-component.git
+  branch = master
 [submodule "vf-logger"]
   path = processing/vein-logger
   url = https://github.com/ZeraGmbH/vf-logger.git
+  branch = master
 [submodule "vf-script"]
   path = processing/vein-script
   url = https://github.com/ZeraGmbH/vf-script.git
+  branch = master
 [submodule "vf-protobuf"]
   path = transport/libvein-protobuf
   url = https://github.com/ZeraGmbH/vf-protobuf.git
@@ -17,6 +21,7 @@
 [submodule "xiqnet"]
   path = transport/xiqnet
   url = https://github.com/ZeraGmbH/vf-tcp.git
+  branch = master
 [submodule "vf-net2"]
   path = transport/vein-net2
   url = https://github.com/ZeraGmbH/vf-net2.git
@@ -28,15 +33,19 @@
 [submodule "vf-hash"]
   path = storage/vein-hash
   url = https://github.com/ZeraGmbH/vf-storage-hash.git
+  branch = master
 [submodule "vf-qml"]
   path = api/qml-veinentity
   url = https://github.com/ZeraGmbH/vf-qml.git
+  branch = master
 [submodule "vf-helpers"]
   path = utils/helpers
   url = https://github.com/ZeraGmbH/vf-helpers.git
+  branch = master
 [submodule "vf-debugger"]
   path = utils/debugger
   url = https://github.com/ZeraGmbH/vf-debugger.git
+  branch = master
 [submodule "vf-unittest2"]
   path = utils/vf-unittest2
   url = https://github.com/ZeraGmbH/vf-unittest2.git
@@ -44,9 +53,16 @@
 [submodule "vf-database-recorder"]
   path = utils/vf-database-recorder
   url = https://github.com/ZeraGmbH/vf-database-recorder.git
+  branch = master
 [submodule "vf-database-replay"]
   path = utils/vf-database-replay
   url = https://github.com/ZeraGmbH/vf-database-replay.git
+  branch = master
 [submodule "transport/vf-protobuf"]
   path = transport/vf-protobuf
   url = https://github.com/ZeraGmbH/vf-protobuf.git
+  branch = master
+[submodule "utils/vf-crypto-bridge"]
+  path = utils/vf-crypto-bridge
+  url = git@github.com:ZeraGmbH/vf-crypto-bridge.git
+  branch = master
