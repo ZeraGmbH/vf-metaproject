@@ -1,7 +1,7 @@
 #enable c++11
 CONFIG += c++11
 
-isEmpty($$VEIN_BASEDIR) {
+isEmpty( VEIN_BASEDIR ) {
   VEIN_BASEDIR = $$PWD
 }
 
