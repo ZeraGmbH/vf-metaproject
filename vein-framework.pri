@@ -84,7 +84,7 @@ VEIN_NET2_INCLUDEDIR = $$VEIN_BASEDIR/transport/vein-net2/
 VEIN_HELPER_INCLUDEDIR = $$VEIN_BASEDIR/utils/helpers
 VEIN_LOGGER_INCLUDEDIR = $$VEIN_BASEDIR/processing/vein-logger
 VEIN_BINARY_LOGGER_INCLUDEDIR = $$VEIN_BASEDIR/processing/vein-binary-logger
-
+VEIN_CRYPTOBRIDGE_INCLUDEDIR = $$VEIN_BASEDIR/utils/vf-crypto-bridge
 
 
 unix:!android {
@@ -166,5 +166,10 @@ defined(VEIN_DEP_CCAPI, var) {
 defined(VEIN_DEP_LOGGER, var) {
   INCLUDEPATH += $$VEIN_LOGGER_INCLUDEDIR
   LIBS += $$VEIN_LOGGER_LIBDIR -lvein-logger
+}
+
+defined(VEIN_DEP_CRYPTOBRIDGE, var) {
+  INCLUDEPATH += $$VEIN_CRYPTOBRIDGE_INCLUDEDIR
+  LIBS += $$VEIN_CRYPTOBRIDGE_LIBDIR -lvf-crypto-bridge
 }
 
