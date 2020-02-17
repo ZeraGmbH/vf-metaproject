@@ -1,41 +1,41 @@
 [submodule "vf-event"]
-  path = processing/vein-event
+	path = processing/vf-event
   url = git@github.com:ZeraGmbH/vf-event.git
   branch = master
 [submodule "vf-component"]
-  path = processing/vein-component
+	path = processing/vf-component
   url = git@github.com:ZeraGmbH/vf-component.git
   branch = master
 [submodule "vf-logger"]
-  path = processing/vein-logger
+	path = processing/vf-logger
   url = git@github.com:ZeraGmbH/vf-logger.git
   branch = master
 [submodule "vf-script"]
-  path = processing/vein-script
+	path = processing/vf-script
   url = git@github.com:ZeraGmbH/vf-script.git
   branch = master
 [submodule "vf-protobuf"]
-  path = transport/libvein-protobuf
+	path = transport/vf-protobuf
   url = git@github.com:ZeraGmbH/vf-protobuf.git
   branch = design2
 [submodule "xiqnet"]
   path = transport/xiqnet
-  url = git@github.com:ZeraGmbH/vf-tcp.git
+	url = git@github.com:ZeraGmbH/xiqnet.git
   branch = master
 [submodule "vf-net2"]
-  path = transport/vein-net2
+	path = transport/vf-net2
   url = git@github.com:ZeraGmbH/vf-net2.git
   branch = master
 [submodule "vf-tcp"]
-  path = transport/vein-tcp
+	path = transport/vf-tcp
   url = git@github.com:ZeraGmbH/vf-tcp.git
   branch = vein-tcp
 [submodule "vf-hash"]
-  path = storage/vein-hash
+	path = storage/vf-storage-hash
   url = git@github.com:ZeraGmbH/vf-storage-hash.git
   branch = master
 [submodule "vf-qml"]
-  path = api/qml-veinentity
+	path = api/vf-qml
   url = git@github.com:ZeraGmbH/vf-qml.git
   branch = master
 [submodule "vf-helpers"]
@@ -49,7 +49,7 @@
 [submodule "vf-unittest2"]
   path = utils/vf-unittest2
   url = git@github.com:ZeraGmbH/vf-unittest2.git
-  branch = Testv2
+	branch = master
 [submodule "vf-database-recorder"]
   path = utils/vf-database-recorder
   url = git@github.com:ZeraGmbH/vf-database-recorder.git
