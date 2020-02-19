@@ -29,7 +29,7 @@
 [submodule "vf-tcp"]
 	path = transport/vf-tcp
   url = git@github.com:ZeraGmbH/vf-tcp.git
-  branch = vein-tcp
+	branch = master
 [submodule "vf-hash"]
 	path = storage/vf-storage-hash
   url = git@github.com:ZeraGmbH/vf-storage-hash.git
@@ -66,3 +66,11 @@
   path = utils/vf-crypto-bridge
   url = git@github.com:ZeraGmbH/vf-crypto-bridge.git
   branch = master
+[submodule "guis/vf-declarative-gui"]
+  path = guis/vf-declarative-gui
+  url = git@github.com:ZeraGmbH/vf-declarative-gui.git
+  branch = master
+[submodule "guis/zera-setup2"]
+	path = guis/zera-setup2
+	url = git@github.com:ZeraGmbH/zera-setup2.git
+	branch = master
