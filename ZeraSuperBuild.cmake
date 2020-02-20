@@ -76,7 +76,8 @@ macro(add_sub_project name path)
                 -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_INSTALL_PREFIX}
                 -DCMAKE_PREFIX_PATH:PATH=${CMAKE_PREFIX_PATH}
                 -DCMAKE_INSTALL_SYSCONFDIR:PATH=${CMAKE_INSTALL_SYSCONFDIR}
-
+                -DCMAKE_BUILD_TYPE:STRING=${CMAKE_BUILD_TYPE}
+                -DCMAKE_CXX_FLAGS:STRING=${CMAKE_CXX_FLAGS}
        )
 endmacro()
 
@@ -94,10 +95,11 @@ macro(add_sub_project_deps name path _depends)
     foreach(TMP_DEP ${${_depends}})
          list(APPEND deps_ext ${TMP_DEP}_ext)
     endforeach()
+    add_subdirectory(${CMAKE_SOURCE_DIR}/${path}/${name} EXCLUDE_FROM_ALL)
     if(NOT isPartialBuild)
         # We want to see the project in QT creator. Therefore we have to add the subdirectory
         # But we do not want to use it. EXCLUDE_FROM_ALL suppresses build in this directory
-        add_subdirectory(${CMAKE_SOURCE_DIR}/${path}/${name} EXCLUDE_FROM_ALL)
+
         #Lets build the project as external project now
         ExternalProject_Add(${name}_ext
                 SOURCE_DIR ${CMAKE_SOURCE_DIR}/${path}/${name}
@@ -106,6 +108,8 @@ macro(add_sub_project_deps name path _depends)
                     -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_INSTALL_PREFIX}
                     -DCMAKE_PREFIX_PATH:PATH=${CMAKE_PREFIX_PATH}
                     -DCMAKE_INSTALL_SYSCONFDIR:PATH=${CMAKE_INSTALL_SYSCONFDIR}
+                    -DCMAKE_BUILD_TYPE:STRING=${CMAKE_BUILD_TYPE}
+                    -DCMAKE_CXX_FLAGS:STRING=${CMAKE_CXX_FLAGS}
                 DEPENDS
                     ${deps_ext}
        )
@@ -117,6 +121,8 @@ macro(add_sub_project_deps name path _depends)
                 -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_INSTALL_PREFIX}
                 -DCMAKE_PREFIX_PATH:PATH=${CMAKE_PREFIX_PATH}
                 -DCMAKE_INSTALL_SYSCONFDIR:PATH=${CMAKE_INSTALL_SYSCONFDIR}
+                -DCMAKE_BUILD_TYPE:STRING=${CMAKE_BUILD_TYPE}
+                -DCMAKE_CXX_FLAGS:STRING=${CMAKE_CXX_FLAGS}
           )
 
     endif()

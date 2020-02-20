@@ -10,6 +10,9 @@ project(vf-metaproject LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
+
+
 include(ZeraSuperBuild.cmake)
 
 
@@ -31,6 +34,14 @@ option(build_debugger "activate or deactivate build" ON)
 option(build_vf-unittest2 "activate or deactivate build" ON)
 option(build_vf-declarative-gui "activate or deactivate build" ON)
 option(build_zera-setup2 "activate or deactivate build" ON)
+
+#activate QML Debugging if build type is Debug
+if (CMAKE_BUILD_TYPE STREQUAL "Debug")
+    message(STATUS "QML Debugging is enabled. Please use this build only in a dafe environment")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG")
+endif()
+
+
 
 #Project vf-helpers
 set(name helpers)
