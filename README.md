@@ -86,9 +86,7 @@ in your build directory.
 
 * Go to open project and choose the toplevel CMakeLists.txt
 * Configure project
-* Go to Projects
-* Delete all build steps 
-* add Custom process step 
+* Go to Projects 
 * Add the required cmake variables and set them as described above
 * Run CMake 
 * Build 
