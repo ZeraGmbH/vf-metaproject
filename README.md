@@ -89,13 +89,13 @@ in your build directory.
 * Go to Projects
 * Delete all build steps 
 * add Custom process step 
-  * Command `make`
-  * Arguments `-j8`
 * Add the required cmake variables and set them as described above
+* Run CMake 
+* Build 
+* set firstBuild OFF
+* Run CMake
 
-Now you are free to choose which project to build by setting the option for the corresponding project.
-Please be sure to set isPartialBuild if you do not build all projects. Note that you have to build all projects 
-at least once.
+Now the project behaves like a normal project.
 
 ## Add Subproject to SuperBuild
 
@@ -122,27 +122,12 @@ check if the submodule appears in .gitmodules.
 To add the project to cmake open CMakeLists.txt and add following lines:
 
 ```
-option(build_<name> "activate or deactivate build" ON)
-...
 set(name <project>)
 set(path <path>)
 set(deps <dep1> <dep2> <dep3>)
-if(${build_${name}})
-    add_sub_project_deps(${name} ${path} "deps")
-endif()
+add_sub_project_deps(${name} ${path} "deps")
 ```
 
-or if the project has no deps
-
-```
-option(build_<name> "activate or deactivate build" ON)
-...
-set(name <project>)
-set(path <path>)
-if(${build_${name}})
-    add_sub_project_deps(${name} ${path})
-endif()
-```
 
 Please note that the project order is important. The project must be added after all projects it depends on. 
 The dependencies will determine the build order during make. 
