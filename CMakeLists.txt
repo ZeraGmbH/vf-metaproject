@@ -91,6 +91,13 @@ set(deps vf-protobuf vf-net2 helpers vf-event)
 add_sub_project_deps(${name} ${path} "deps")
 
 
+#project vf-qmllibs
+set(name vf-qmllibs)
+set(path api)
+set(deps)
+add_sub_project_deps(${name} ${path} "deps")
+
+
 #project vf-script
 set(name vf-script)
 set(path processing)

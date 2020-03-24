@@ -74,3 +74,6 @@
 	path = guis/zera-setup2
 	url = git@github.com:ZeraGmbH/zera-setup2.git
 	branch = master
+[submodule "api/vf-qmllibs"]
+	path = api/vf-qmllibs
+	url = git@github.com:ZeraGmbH/vf-qmllibs.git
