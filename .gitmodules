@@ -77,3 +77,7 @@
 [submodule "api/vf-qmllibs"]
 	path = api/vf-qmllibs
 	url = git@github.com:ZeraGmbH/vf-qmllibs.git
+[submodule "api/zvkeyboard"]
+	path = api/zvkeyboard
+	url = git@github.com:ZeraGmbH/zvkeyboard.git
+	branch = master

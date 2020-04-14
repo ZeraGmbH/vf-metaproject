@@ -27,6 +27,12 @@ set(path utils)
 set(deps)
 add_sub_project_deps(${name} ${path} "deps")
 
+#Project zvkeyboard
+set(name zvkeyboard)
+set(path api)
+set(deps)
+add_sub_project_deps(${name} ${path} "deps")
+
 
 #project vf-tcp
 set(name vf-tcp)
