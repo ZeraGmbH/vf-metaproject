@@ -21,6 +21,15 @@ if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG")
 endif()
 
+
+#project SortFilterProxyModelCmake
+set(name SortFilterProxyModelCmake)
+set(path api)
+set(deps)
+add_sub_project_deps(${name} ${path} "deps")
+
+
+
 #Project vf-helpers
 set(name helpers)
 set(path utils)
@@ -100,7 +109,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project vf-qmllibs
 set(name vf-qmllibs)
 set(path api)
-set(deps)
+set(deps SortFilterProxyModelCmake)
 add_sub_project_deps(${name} ${path} "deps")
 
 

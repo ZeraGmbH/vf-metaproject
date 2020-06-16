@@ -81,3 +81,7 @@
 	path = api/zvkeyboard
 	url = git@github.com:ZeraGmbH/zvkeyboard.git
 	branch = master
+[submodule "api/SortFilterProxyModelCmake"]
+	path = api/SortFilterProxyModelCmake
+	url = git@github.com:ZeraGmbH/SortFilterProxyModelCmake.git
+	branch = master
