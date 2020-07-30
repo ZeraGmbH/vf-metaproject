@@ -22,12 +22,17 @@ if (CMAKE_BUILD_TYPE STREQUAL "Debug")
 endif()
 
 
+#project JsonSettingsQml
+set(name JsonSettingsQml)
+set(path api)
+set(deps)
+add_sub_project_deps(${name} ${path} "deps")
+
 #project SortFilterProxyModelCmake
 set(name SortFilterProxyModelCmake)
 set(path api)
 set(deps)
 add_sub_project_deps(${name} ${path} "deps")
-
 
 
 #Project vf-helpers
@@ -109,7 +114,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project vf-qmllibs
 set(name vf-qmllibs)
 set(path api)
-set(deps SortFilterProxyModelCmake)
+set(deps SortFilterProxyModelCmake JsonSettingsQml)
 add_sub_project_deps(${name} ${path} "deps")
 
 
