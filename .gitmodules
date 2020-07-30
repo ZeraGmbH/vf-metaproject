@@ -85,3 +85,11 @@
 	path = api/SortFilterProxyModelCmake
 	url = git@github.com:ZeraGmbH/SortFilterProxyModelCmake.git
 	branch = master
+[submodule "guis/api/JsonSettingsQml"]
+	path = guis/api/JsonSettingsQml
+	url = git@github.com:ZeraGmbH/JsonSettingsQML.git
+	branch = master
+[submodule "api/JsonSettingsQml"]
+	path = api/JsonSettingsQml
+	url = git@github.com:ZeraGmbH/JsonSettingsQML.git
+	branch = master
