@@ -163,7 +163,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project vf-declarative-gui
 set(name vf-declarative-gui)
 set(path guis)
-set(deps vf-tcp helpers vf-component vf-event vf-logger)
+set(deps vf-tcp helpers vf-component vf-event vf-logger vf-qmllibs)
 add_sub_project_deps(${name} ${path} "deps")
 
 
