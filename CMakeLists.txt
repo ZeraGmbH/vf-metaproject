@@ -28,6 +28,12 @@ set(path api)
 set(deps)
 add_sub_project_deps(${name} ${path} "deps")
 
+#project vf-gui-translation
+set(name vf-gui-translation)
+set(path api)
+set(deps)
+add_sub_project_deps(${name} ${path} "deps")
+
 #project SortFilterProxyModelCmake
 set(name SortFilterProxyModelCmake)
 set(path api)
@@ -114,7 +120,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project vf-qmllibs
 set(name vf-qmllibs)
 set(path api)
-set(deps SortFilterProxyModelCmake JsonSettingsQml)
+set(deps SortFilterProxyModelCmake JsonSettingsQml vf-gui-translation)
 add_sub_project_deps(${name} ${path} "deps")
 
 
@@ -163,7 +169,7 @@ add_sub_project_deps(${name} ${path} "deps")
 #project vf-declarative-gui
 set(name vf-declarative-gui)
 set(path guis)
-set(deps vf-tcp helpers vf-component vf-event vf-logger vf-qmllibs)
+set(deps vf-tcp vf-gui-translation helpers vf-component vf-event vf-logger vf-qmllibs)
 add_sub_project_deps(${name} ${path} "deps")
 
 
