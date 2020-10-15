@@ -89,6 +89,10 @@
 	path = api/JsonSettingsQml
 	url = git@github.com:ZeraGmbH/JsonSettingsQML.git
 	branch = master
+[submodule "api/vf-cpp"]
+	path = api/vf-cpp
+	url = git@github.com:ZeraGmbH/vf-cpp.git
+	branch = main
 [submodule "api/vf-gui-translation"]
 	path = api/vf-gui-translation
 	url = git@github.com:ZeraGmbH/vf-gui-translation.git
