@@ -96,3 +96,7 @@
 [submodule "api/vf-gui-translation"]
 	path = api/vf-gui-translation
 	url = git@github.com:ZeraGmbH/vf-gui-translation.git
+[submodule "api/PythonScriptingInterface"]
+	path = api/PythonScriptingInterface
+	url = git@github.com:ZeraGmbH/PythonScriptingInterface.git
+	branch = main

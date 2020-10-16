@@ -185,5 +185,10 @@ set(path guis)
 set(deps vf-tcp helpers vf-component vf-event vf-logger)
 add_sub_project_deps(${name} ${path} "deps")
 
+#project zera-setup2
+set(name PythonScriptingInterface)
+set(path api)
+set(deps )
+add_sub_project_deps(${name} ${path} "deps")
 
 
