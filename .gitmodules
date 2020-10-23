@@ -100,3 +100,7 @@
 	path = api/PythonScriptingInterface
 	url = git@github.com:ZeraGmbH/PythonScriptingInterface.git
 	branch = main
+[submodule "processing/vf-export"]
+	path = processing/vf-export
+	url = git@github.com:ZeraGmbH/vf-export.git
+	branch = main

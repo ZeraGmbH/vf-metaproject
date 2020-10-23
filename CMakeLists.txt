@@ -144,6 +144,12 @@ set(deps vf-tcp helpers vf-component vf-event vf-qml vf-storage-hash)
 add_sub_project_deps(${name} ${path} "deps")
 
 
+#project vf-database-replay
+set(name vf-export)
+set(path processing)
+set(deps vf-cpp PythonScriptingInterface helpers vf-component vf-event vf-logger)
+add_sub_project_deps(${name} ${path} "deps")
+
 #project vf-database-recorder
 set(name vf-database-recorder)
 set(path utils)
