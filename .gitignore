@@ -49,3 +49,7 @@ scripts/
 # ignore build output
 bin*
 libs*
+
+# vscode
+
+.vscode/
