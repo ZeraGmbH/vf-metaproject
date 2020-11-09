@@ -14,6 +14,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 include(ZeraSuperBuild.cmake)
+include(QmlDebug.cmake)
 
 #activate QML Debugging if build type is Debug
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
