@@ -104,3 +104,7 @@
 	path = processing/vf-export
 	url = git@github.com:ZeraGmbH/vf-export.git
 	branch = main
+[submodule "processing/vf-files"]
+	path = processing/vf-files
+	url = git@github.com:ZeraGmbH/vf-files.git
+	branch = master

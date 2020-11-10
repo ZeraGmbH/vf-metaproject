@@ -150,6 +150,13 @@ set(path processing)
 set(deps vf-cpp PythonScriptingInterface helpers vf-component vf-event vf-logger)
 add_sub_project_deps(${name} ${path} "deps")
 
+#project vf-files
+set(name vf-files)
+set(path processing)
+set(deps vf-cpp)
+add_sub_project_deps(${name} ${path} "deps")
+
+
 #project vf-database-recorder
 set(name vf-database-recorder)
 set(path utils)
