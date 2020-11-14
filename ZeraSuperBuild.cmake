@@ -18,9 +18,9 @@
 
 include(${CMAKE_ROOT}/Modules/ExternalProject.cmake)
 
-option(firstBuild "set to on for the first project build/set off when you start working with the project" ON)
+option(ZERA_firstBuild "set to on for the first project build/set off when you start working with the project" ON)
 
-if(firstBuild)
+if(ZERA_firstBuild)
 #Silent subdirs
 #force all find_package calls to be Quiet
     macro(find_package)
@@ -47,7 +47,7 @@ macro(add_sub_project_deps name path _depends)
          list(APPEND deps_ext ${TMP_DEP}_ext)
     endforeach()
 
-    if(NOT firstBuild)
+    if(NOT ZERA_firstBuild)
         add_subdirectory(${CMAKE_SOURCE_DIR}/${path}/${name})
     else()
         # We want to see the project in QT creator. Therefore we have to add the subdirectory

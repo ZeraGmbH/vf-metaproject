@@ -14,6 +14,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 include(ZeraSuperBuild.cmake)
+include(QmlDebug.cmake)
 
 #activate QML Debugging if build type is Debug
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
@@ -21,6 +22,12 @@ if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG")
 endif()
 
+
+#project PythonScriptingInterface
+set(name PythonScriptingInterface)
+set(path api)
+set(deps )
+add_sub_project_deps(${name} ${path} "deps")
 
 #project JsonSettingsQml
 set(name JsonSettingsQml)
@@ -198,10 +205,5 @@ set(path guis)
 set(deps vf-tcp helpers vf-component vf-event vf-logger)
 add_sub_project_deps(${name} ${path} "deps")
 
-#project zera-setup2
-set(name PythonScriptingInterface)
-set(path api)
-set(deps )
-add_sub_project_deps(${name} ${path} "deps")
 
 
