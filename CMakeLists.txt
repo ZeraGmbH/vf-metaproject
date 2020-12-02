@@ -144,6 +144,12 @@ set(deps vf-tcp helpers vf-component vf-event vf-qml vf-storage-hash)
 add_sub_project_deps(${name} ${path} "deps")
 
 
+#project PythonScriptingInterface
+set(name PythonScriptingInterface)
+set(path api)
+set(deps )
+add_sub_project_deps(${name} ${path} "deps")
+
 #project vf-database-replay
 set(name vf-export)
 set(path processing)
@@ -196,12 +202,6 @@ add_sub_project_deps(${name} ${path} "deps")
 set(name zera-setup2)
 set(path guis)
 set(deps vf-tcp helpers vf-component vf-event vf-logger)
-add_sub_project_deps(${name} ${path} "deps")
-
-#project zera-setup2
-set(name PythonScriptingInterface)
-set(path api)
-set(deps )
 add_sub_project_deps(${name} ${path} "deps")
 
 
