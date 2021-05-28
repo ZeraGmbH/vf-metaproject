@@ -18,10 +18,6 @@
 	path = transport/vf-protobuf
   url = git@github.com:ZeraGmbH/vf-protobuf.git
   branch = design2
-[submodule "xiqnet"]
-  path = transport/xiqnet
-	url = git@github.com:ZeraGmbH/xiqnet.git
-  branch = master
 [submodule "vf-net2"]
 	path = transport/vf-net2
   url = git@github.com:ZeraGmbH/vf-net2.git

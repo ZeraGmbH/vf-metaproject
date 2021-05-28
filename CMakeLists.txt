@@ -58,12 +58,6 @@ set(deps helpers)
 add_sub_project_deps(${name} ${path} "deps")
 
 
-set(name xiqnet)
-set(path transport)
-set(deps helpers)
-add_sub_project_deps(${name} ${path} "deps")
-
-
 set(name vf-crypto-bridge)
 set(path utils)
 set(deps helpers vf-tcp)
