@@ -66,10 +66,6 @@
   path = guis/vf-declarative-gui
   url = git@github.com:ZeraGmbH/vf-declarative-gui.git
   branch = master
-[submodule "guis/zera-setup2"]
-	path = guis/zera-setup2
-	url = git@github.com:ZeraGmbH/zera-setup2.git
-	branch = master
 [submodule "api/vf-qmllibs"]
 	path = api/vf-qmllibs
 	url = git@github.com:ZeraGmbH/vf-qmllibs.git

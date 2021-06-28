@@ -171,9 +171,4 @@ set(deps vf-tcp vf-gui-translation helpers vf-component vf-event vf-logger vf-qm
 add_sub_project_deps(${name} ${path} "deps")
 
 
-set(name zera-setup2)
-set(path guis)
-set(deps vf-tcp helpers vf-component vf-event vf-logger)
-add_sub_project_deps(${name} ${path} "deps")
-
 
