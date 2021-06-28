@@ -29,6 +29,7 @@ jobs:
           #- clang TODO!!!
         fedora_ver:
           - 32
+          - 33
 
     env:
       MATRIX_LABEL: ${{ matrix.compiler }}-fedora${{ matrix.fedora_ver }}
