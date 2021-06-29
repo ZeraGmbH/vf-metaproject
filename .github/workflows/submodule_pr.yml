@@ -1,0 +1,22 @@
+name: CI triggered by submodule pull request
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr_repo:
+        description: URI of the repo containing pull request
+        required: true
+      pr_sha:
+        description: SHA that triggered the pull request
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show input
+        run: |
+            echo "Repo: ${{ github.event.inputs.pr_repo }}"
+            echo "SHA: ${{ github.event.inputs.pr_sha }}"
+
